@@ -1,0 +1,212 @@
+机器学习同普通算法的区别和联系
+
+机器学习同算法的区别:
+
+算法就是一系列必须精确不能模糊的指令，告诉计算机该做什么，这样计算机才能够执行；算法是一套严格的标准。
+
+每个算法都会有输入和输出： 将数据输入计算机，算法会利用数据完成接下来的事情，然后给出计算的结果，这个结果是确定的。
+
+机器学习则是完全颠倒了这个顺序：它的输入是数据和想要的结果， 输出的是算法，该算法能够将输入的数据转换成想要的结果。也就是说，通过机器学习，计算机能够自己编写程序。
+
+机器学习可以使计算机自己学会编写程序，是不是一件很“哇”的事情。
+
+机器学习同算法的联系:
+
+机器学习是由一系列算法构成的一个系统。
+
+总之，机器学习就是计算机自己学习编写程序；程序员干什么事情？？当然要尽快升级，学会如何控制机器学习了。
+
+机器学习的算法
+
+本节总结一下机器学习领域的主要算法，可以为初学者提供一个算法的概要。   
+
+机器学习算法可以采用如下的两种方式分类，其一是根据学习的方式分类，其二是根据算法的相似性进行分类。
+
+根据学习的方式分类
+
+根据学习的方式，机器学习的算法可以分为监督学习，无监督学习和半监督学习。
+
+1）监督学习:
+
+输入的数据分为两部分，其中一部分是训练数据，另外一部分是每个训练数据已知的结果；比如要监督学习一封邮件是否为垃圾邮件，监督学习需要输入的是训练数据为很多封邮件以及每一封邮件的标记，标记表示该邮件是否为垃圾邮件。
+
+然后进行训练，通过训练的过程进行预测和校正，直到根据训练的数据获得要求精度的模型。
+
+需要解决的问题就是分类和回归。
+
+在监督学习中，需要通过逻辑回归或BP神经网络来进行模型的学习反馈。
+
+ 
+
+2） 非监督学习:
+
+输入的数据未进行打标，也不知道数据的类别。
+
+ 
+
+需要通过归纳输入数据的结构，获取通用的规则来建立模型。该过程需要减少数据的冗余,利用相似性来组织数据。
+
+需要解决的问题有，进行聚类，降低数据的维数，进行关联规则学习。
+
+涉及到算法有Apriori算法和K-Means算法。
+
+Apriori算法是一种挖掘关联规则的频繁项集算法，其核心思想是通过候选集生成和情节，向下封闭检测两个阶段来挖掘频繁项集。
+
+K-Means算法是一种聚类算法，通过它来将一给定的数据集进行分类。
+
+ 
+
+3）半监督学习:
+
+输入的数据既有打标的数据又有未打标的数据。
+
+在无类标签的样例的帮助下训练有类标签的样本，获得比只用有类标签的样本训练得到的分类器性能更优的分类器，弥补有类标签的样本不足的缺点。
+
+ 
+
+根据功能相似性算法分类
+
+1）基于回归的算法:
+
+回归算法解决的问题是模型训练迭代过程中，利用测量误差建立起来的变量之间的关系。
+
+最流行的回归算法有:
+
+OLSR – Ordinary Least Squares Regression 普通最小二乘回归
+Linear Regression – 线性回归
+Logistic Regression – 逻辑回归
+Stepwise Regression – 逐步回归
+Multivariate Adaptive Regression Splines (MARS) – 多元自适应回归样条
+Locally Estimated Scatterplot Smoothing(LOESS) – 局部估计散点图平滑
+  
+
+2）基于实例的算法:
+
+该算法需要建造一个实例数据库，然后采用相似性判决来将新数据和数据库中的数据进行比较，找到最好的匹配和预测。问题的核心就是存储实例和相似性判据的存储。
+
+最流行的基于实例的算法有:
+
+k-Nearest Neighbor (kNN)    -   k近邻算法
+Learning Vector Quantization (LVQ) – 学习矢量量化网络算法
+Self-Organizing Map (SOM)       - 自组织特征映射模型
+Locally Weighted Learning (LWL)  - 局部加权学习算法
+  
+
+3）正则化算法
+
+    正则化是对其它算法（通常指回归算法）的复杂度进行惩罚的方法，目的是得到更简单的模型实现更好的泛化
+
+最流行的正则化算法有：
+
+Ridge Regression – 岭回归
+Least AbsoluteShrinkage and Selection Operator (LASSO)
+Elastic Net
+Least-AngleRegression (LARS)
+ 
+
+4） 决策树算法
+
+    决策树算法基于数据的属性值做决策、用来做分类和回归、决策树通常较快并且准确，是机器学习中很受欢迎的算法
+
+最流行的决策树算法有：
+
+Classification and Regression Tree (CART) -分类回归树算法
+ Iterative Dichotomiser 3 (ID3) - 迭代二叉树 3(ID3)
+C4.5 and C5.0
+Chi-squared Automatic Interaction Detection(CHAID) -卡方自动交互检测
+Decision Stump -单层决策树
+M5 算法
+Conditional Decision Trees -条件决策树
+
+5） 贝叶斯算法
+
+贝叶斯方法算法是基于贝叶斯定理的一类算法，主要用来解决分类和回归问题。
+
+比较流行的算法包括：
+
+Naive Bayes -朴素贝叶斯算法
+Gaussian Naive Bayes – 高斯朴素贝叶斯
+Multinomial Naive Bayes – 多种名义朴素贝叶斯
+Averaged One-Dependence Estimators， AODE-平均单依赖估计
+Bayesian Belief Network（BBN）
+Bayesian Network (BN)
+
+6）聚类算法 （ Clustering Algorithms ）
+
+     聚类算法使用数据的固有结构，把数据组织成最大化共性的分组
+
+最流行的聚类算法有：
+
+ k-Means – k均值
+k-Medians – K中值
+Expectation Maximisation (EM) – 期望最大化
+Hierarchical Clustering – 分成聚类
+ 
+
+7）关联规则学习算法
+
+关联规则学习算法提取最好解释数据变量关系的规则；这些规则可以在大的数据集中，发现重要的有用的关系。
+
+最流行的关联学习算法有:
+
+Apriori algorithm
+Eclat algorithm
+ 
+
+8) 人工神经网络算法
+
+人工神经网络根据生物神经网络的结果和功能构建的模型。
+
+最流行的神经网络算法有:
+
+Perceptron   - 感知机
+Back-Propagation – 反向传播
+Hopfield Network – 霍普菲尔德网络
+Radial Basis Function Network (RBFN) – 径向基函数网络
+
+9）深度学习算法
+
+    深度学习是人工神经网络的现代升级，它可以使用大量的廉价计算资源。 深度学习关心的是构建更大和更复杂的神经网络，许多深度学习方法关注解决半监督学习问题
+
+最流行的深度学习算法有:
+
+Deep Boltzmann Machine (DBM) – 深度玻尔兹曼机
+Deep Belief Networks (DBN) – 深信度网络
+ Convolutional Neural Network (CNN) -卷积神经网络
+Stacked Auto-Encoders – 堆栈式自动编码器
+Recurrent Neural Networks(RNN) – 循环神经网络
+Long short-Term Memory（LSTM）- 时间递归神经网络
+
+10） 降维算法
+
+和聚类算法一样，降维算法用来从数据中寻找固有的结构，但是降维算法    是用非监督方法来用更少的信息总结和描述数据。 降维算法可以用来可视化空间数据，或者简化数据使得数据在监督学习中使用。
+
+降维算法中的很多方法可以在分类和回归中使用。 流行的降维算法有：
+
+Principal Component Analysis (PCA) - 主成分分析
+Principal Component Regression (PCR)  -主成分回归
+Partial Least Squares Regression (PLSR) -偏最小二乘回归
+Sammon Mapping - Sammon 映射
+Multidimensional Scaling (MDS) – 多维尺度变换
+Projection Pursuit -投影寻踪
+Linear Discriminant Analysis (LDA) -线性判决分析
+Mixture Discriminant Analysis (MDA) –混合判决分析
+Quadratic Discriminant Analysis (QDA) -二次判决分析
+Flexible Discriminant Analysis – 柔性判决分析
+ 
+
+11） 融合算法
+
+融合算法是由多个独立训练的弱模型组成，把它们的预测组合在一起，形成最终的预测。
+
+重点是把什么类型的弱学习放在一起，以及采用什么方式组合在一起。
+
+比较流行算法有:
+
+Boosting
+Bootstrapped Aggregation (Bagging)
+AdaBoost
+Stacked Generalization (blending)
+Gradient Boosting Machines (GBM)
+Gradient Boosted Regression Trees (GBRT)
+Random Forest             -- 随机森林
